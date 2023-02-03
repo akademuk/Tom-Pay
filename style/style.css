@@ -463,13 +463,12 @@ header .wrapper ul li:nth-last-of-type(1) {
 }
 /*Facilities **********************************************/
 .facilities {
-    padding: 185px 0 377px 0;
-    background: url(../img/Facilities.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom;
+    padding: 185px 0 0 0;
     position: relative;
     overflow: hidden;
+}
+.facilities .wrapper {
+    margin-bottom: 100px;
 }
 .facilities .wrapper h2{
     font-family: 'Gilroy-Bold', sans-serif;
@@ -852,7 +851,10 @@ select {
         font-size: 20px;
     }
     .facilities {
-        padding-bottom: 250px;
+        padding-bottom:0;
+    }
+    .facilities .wrapper {
+        margin-bottom: 100px;
     }
     .footerNav li a {
         font-size: 20px;
@@ -912,11 +914,278 @@ select {
     top: -250px;
 }
 .positionImg:after {
-       content: '';
+    content: '';
     position: absolute;
     left: 455px;
     top: -86px;
     border-bottom: 85px solid white;
     border-left: 85px solid transparent;
     transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+.bannerBusiness h2 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.bannerBusiness p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bannerBusiness h2{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.bannerBusiness p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.bannerBusiness button {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 209px;
+    height: 45px;
+    background: radial-gradient(47.11% 213.53% at -8.16% -16.33%, #BB2EFD 47.4%, #7461F0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 12px 31px rgba(72, 23, 135, 0.31), 0px 3.61765px 9.34559px rgba(72, 23, 135, 0.201993), 0px 1.50259px 3.88168px rgba(72, 23, 135, 0.155), 0px 0.543456px 1.40393px rgba(72, 23, 135, 0.108007), inset -6px -4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+}
+.cardBusinessContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.cardElement2 {
+    height: 100%;
+}
+.cardBusiness .wrapper h2{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: #1D2238;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cardBusiness .wrapper {
+    flex-direction: column;
+}
+.bannerBusinessPage {
+    padding-bottom: 0;
+}
+.cardContainers {
+    display: flex;
+    align-items: center;
+}
+.cardContainers h3 {
+    margin-left: 10px;
+}
+.cardElement1 {
+    height: 100%;
+}
+.bannerBusinessPage .wrapper {
+    padding-bottom: 50px;
+}
+.cardBusinessContainer .cardContainer {
+    width: 32%;
+}
+.aboutCompany .wrapper > p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.aboutCompanySteps {
+    height: 236px;
+    background: #FFFFFF;
+    box-shadow: 5px 3px 33px rgba(116, 97, 240, 0.31);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+}
+.aboutCompanySteps img {
+    width: 100%;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+.servicesSection {
+    width: 32%;
+    background: linear-gradient(116.62deg, rgba(255, 255, 255, 0.4) 1.54%, rgba(255, 255, 255, 0.1) 70.68%);
+    box-shadow: 0px 1.36442px 32.7461px -1.36442px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.6442px);
+    border-radius: 20.4663px;
+    min-height: 225px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.servicesSection h3{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.servicesSection > p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.servicesSection ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+.servicesSection li {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.servicesSectionGray h3 {
+    color: #959595 !important;
+}
+.servicesSectionGray p {
+    color: #959595 !important;
+}
+.services {
+    margin-bottom: 180px;
+}
+.accountFees > h2 {
+    text-align: left !important;
+}
+.accountFeesSection {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.accountFeesContainer {
+    background: #F7F7F7;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+.accountFeesLeft {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1B2136;
+}
+.accountFeesRight {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #1B2136;
+    margin-left: auto;
+}
+.accountFeesSection:nth-of-type(2n){
+    background: #FFFFFF;
+}
+.accountFeesSectionContainer:nth-of-type(1) {
+    margin-left: auto;
+    margin-right: 50px;
+}
+.accountFeesSectionContainer {
+    text-align: right !important;
+}
+.accountFeesSection span {
+    font-family: 'Gilroy-Medium';
+    font-size: 16px;
+    line-height: 120%;
+    color: #7461F0;
+}
+.mar {
+    margin-right: 0 !important;
+}
+.Payments {
+    margin-top: 35px;
+}
+.Payments .accountFeesContainer .accountFeesSection .accountFeesSectionContainer {
+    margin-right: 0 !important;
+}
+.Payments .accountFeesContainer .accountFeesSection .accountFeesSectionContainer.marRight {
+    margin-right: 20px !important;
+}
+.aboutCompany22 {
+    bottom: 20%;
+}
+.aboutCompany33 {
+    bottom: 40%;  
+}
+.aboutCompany34 {
+    bottom: 70%;  
+}
+.facilitiesPage {
+    padding-top: 20px !important;
 }
