@@ -347,12 +347,6 @@ header .wrapper ul li:nth-last-of-type(1) {
     top: -85px;
     left: 0;
 }
-.aboutCompany1:after {
-    content: "";
-    background: #FFFFFF;
-    width: 100px;
-    height: 100px;
-}
 .aboutCompany2 {
     position: absolute;
     bottom: -80%;
@@ -398,6 +392,8 @@ header .wrapper ul li:nth-last-of-type(1) {
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 3;
 }
 /*Price **********************************************/
 .priceContainer {
@@ -434,7 +430,10 @@ header .wrapper ul li:nth-last-of-type(1) {
 .priceImg1 {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 2%;
+    max-width: 100%;
+    object-fit: contain;
+    width: 50%;
 }
 .priceContainerSectionTittle {
     font-family: 'Gilroy-Bold', sans-serif;
@@ -704,7 +703,15 @@ select {
 .formBottom a {
     color: rgba(117, 98, 241, 1);
 }
-
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(../img/select.svg);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 15px;
+}
 
 
 
@@ -896,4 +903,20 @@ select {
     .card{
         padding-bottom: 0;
     }
+}
+
+
+.positionImg {
+    background: #1B2136;
+    position: relative;
+    top: -250px;
+}
+.positionImg:after {
+       content: '';
+    position: absolute;
+    left: 455px;
+    top: -86px;
+    border-bottom: 85px solid white;
+    border-left: 85px solid transparent;
+    transform: rotate(-90deg);
 }
